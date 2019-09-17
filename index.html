@@ -1,1 +1,232 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>随心音乐</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body class="bg">
+	<div class="container mhead">
+		<div class="navbar navbar-inverse mhead-1">
+			<div class="row">
+				<div class="col-lg-8 fontset">
+					<div class="col-md-3 col-md-offset-1">随心Music</div>
+					<div class="col-md-3">随心Movie</div>
+					<div class="col-md-3">随心FM</div>
+				</div>
+				<div class="col-lg-4">
+					<form class="navbar-form navbar-center">
+						<div class="input-group">
+							<input type="search" name="" value="" placeholder="搜索歌名" class="form-control">
+							<span class="input-group-addon"><em class="glyphicon glyphicon-search"></em></span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid mbody">
+			<div class="mlist">
+				<div class="mlist1">功能列表</div>
+				<div class="mlist2">
+					<div>
+						<div class="list-one">
+							<div class="list-one-head">
+								<span class="glyphicon glyphicon-music"></span>
+								<span>&nbsp;在线音乐</span>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle dropdown-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span id="swicth" class="glyphicon glyphicon-folder-close"></span>
+									<span>&nbsp;车载音乐</span>
+									<span class="glyphicon glyphicon-menu-hamburger"></span>
+								</button>
+								<ul id="carDvd" class="dropdown-menu dropdown-ul" aria-labelledby="dropdownMenu1">
+									<li>
+										<a href="javascript:void(0);">&nbsp;车载环绕-拼命三郎DJ版<span class="glyphicon glyphicon-headphones" title="播放"></span></a>
+									</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;车载环绕-兄弟我为你唱首歌DJ版<span class="glyphicon glyphicon-headphones" title="播放"></a>
+	    							</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;车载-夜空中最亮的星DJ串烧<span class="glyphicon glyphicon-headphones" title="播放"></a>
+	    							</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;重低音车载-夏兰-天涯情歌DJ版<span class="glyphicon glyphicon-headphones" title="播放"></a>
+	    							</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;车载-一曲相思-阿悠悠Dj版<span class="glyphicon glyphicon-headphones" title="播放"></a>
+	    							</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;车载-绝美天籁-顶级女声金碟<span class="glyphicon glyphicon-headphones" title="播放"></a>
+	    							</li>
+								</ul>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle dropdown-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span id="swicth" class="glyphicon glyphicon-folder-close"></span>
+									<span>&nbsp;民谣</span>
+									<span class="glyphicon glyphicon-menu-hamburger"></span>
+								</button>
+								<ul id="ballad" class="dropdown-menu dropdown-ul" aria-labelledby="dropdownMenu1">
+									<li>
+										<a href="javascript:void(0);">&nbsp;这城市-旭日阳刚<span class="glyphicon glyphicon-headphones" title="播放"></span></a>
+									</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;我来弹你来唱-校园民谣<span class="glyphicon glyphicon-headphones" title="播放"></span></a>
+	    							</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;青春无悔-民谣<span class="glyphicon glyphicon-headphones" title="播放"></span></a>
+	    							</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;南山南<span class="glyphicon glyphicon-headphones" title="播放"></span></a>
+	    							</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;黎明前的黑暗-蓝七七<span class="glyphicon glyphicon-headphones" title="播放"></span></a>
+	    							</li>
+								</ul>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle dropdown-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span id="swicth" class="glyphicon glyphicon-folder-close"></span>
+									<span>&nbsp;摇滚</span>
+									<span class="glyphicon glyphicon-menu-hamburger"></span>
+								</button>
+								<ul id="rock" class="dropdown-menu dropdown-ul" aria-labelledby="dropdownMenu1">
+									<li><a href="javascript:void(0);">此文件夹为空</a></li>
+								</ul>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle dropdown-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span id="swicth" class="glyphicon glyphicon-folder-close"></span>
+									<span>&nbsp;流行歌曲</span>
+									<span class="glyphicon glyphicon-menu-hamburger"></span>
+								</button>
+								<ul id="fashion" class="dropdown-menu dropdown-ul" aria-labelledby="dropdownMenu1">
+									<li><a href="javascript:void(0);">此文件夹为空</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="list-two">
+							<div class="list-two-head">
+								<span class="glyphicon glyphicon-film"></span>
+								<span>&nbsp;歌曲MV</span>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle dropdown-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span id="swicth" class="glyphicon glyphicon-folder-close"></span>
+									<span>&nbsp;流行音乐</span>
+									<span class="glyphicon glyphicon-menu-hamburger"></span>
+								</button>
+								<ul id="musicMv" class="dropdown-menu  dropdown-ul" aria-labelledby="dropdownMenu1">
+									<li>
+										<a href="javascript:void(0);">&nbsp;BINGBIAN病变-前任3<span class="glyphicon glyphicon-play-circle" title="播放"></span></a>
+									</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;告白气球-沙画MV-周杰伦<span class="glyphicon glyphicon-play-circle" title="播放"></span></a>
+	    							</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;浮夸-陈奕迅<span class="glyphicon glyphicon-play-circle" title="播放"></span></a>
+	    							</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;说散就散-袁娅维<span class="glyphicon glyphicon-play-circle" title="播放"></span></a>
+	    							</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;沙漠骆驼-展展与罗罗<span class="glyphicon glyphicon-play-circle" title="播放"></span></a>
+	    							</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;生僻字-陈柯宇<span class="glyphicon glyphicon-play-circle" title="播放"></span></a>
+	    							</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;半阳-流浪<span class="glyphicon glyphicon-play-circle" title="播放"></span></a>
+	    							</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;可不可以-原创<span class="glyphicon glyphicon-play-circle" title="播放"></span></a>
+	    							</li>
+	    							<li>
+	    								<a href="javascript:void(0);">&nbsp;起风了-吴青峰<span class="glyphicon glyphicon-play-circle" title="播放"></span></a>
+	    							</li>
+								</ul>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle dropdown-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span id="swicth" class="glyphicon glyphicon-folder-close"></span>
+									<span>&nbsp;民谣</span>
+									<span class="glyphicon glyphicon-menu-hamburger"></span>
+								</button>
+								<ul id="mList" class="dropdown-menu  dropdown-ul" aria-labelledby="dropdownMenu1">
+									<li><a href="javascript:void(0);">此文件夹为空</a></li>
+								</ul>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle dropdown-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span id="swicth" class="glyphicon glyphicon-folder-close"></span>
+									<span>&nbsp;摇滚</span>
+									<span class="glyphicon glyphicon-menu-hamburger"></span>
+								</button>
+								<ul id="mList" class="dropdown-menu  dropdown-ul" aria-labelledby="dropdownMenu1">
+									<li><a href="javascript:void(0);">此文件夹为空</a></li>
+								</ul>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle dropdown-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span id="swicth" class="glyphicon glyphicon-folder-close"></span>
+									<span>&nbsp;好声音</span>
+									<span class="glyphicon glyphicon-menu-hamburger"></span>
+								</button>
+								<ul id="mList" class="dropdown-menu  dropdown-ul" aria-labelledby="dropdownMenu1">
+									<li><a href="javascript:void(0);">此文件夹为空</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="list-three">
+							<div class="list-three-head">
+								<span class="glyphicon glyphicon-picture"></span>
+								<span>&nbsp;浏览图片</span>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle dropdown-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span id="swicth" class="glyphicon glyphicon-folder-close"></span>
+									<span>&nbsp;浏览图片</span>
+									<span class="glyphicon glyphicon-menu-hamburger"></span>
+								</button>
+								<ul id="mList" class="dropdown-menu dropdown-ul" aria-labelledby="dropdownMenu1">
+    								<li><a href="javascript:void(0);">此文件夹为空</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mlist3"></div>
+			</div>
+			<!-- 播放界面 -->
+			<div class="mbox">
+				<div class="mdefault"><img src="http://i1.hdslb.com/bfs/archive/462184032db2dd5711533bb355ca48a8794ab52f.jpg" alt=""></div>
+				<div class="mbox-video">
+					<video class="vplayer" src="" autobuffer autoloop loop controls></video>
+				</div>
+				<div class="mbox-music">
+					<div class="mbox1">
+						<span>正在播放：</span>
+						<span></span>
+					</div>
+					<div class="mbox2"><img src="" alt=""></div>
+					<div class="mbox2-1">
+						<!--<div class="bgpic"></div>-->
+						<div class="musictext"></div>
+					</div>
+					<div class="mbox3">
+						<audio src="" autobuffer loop controls class="mplayer"></audio>
+						<span id="chgpic" title="歌手图片">图</span>
+						<span id="chgword" title="歌词">词</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div></div>
+	</div>
+</body>
+</html>
